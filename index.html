@@ -2,13 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 <title>IMA Club</title>
 </head>
 <body>
-<header>
-<nav>
-<h1>IMA Club</h1>
-<ul>
+<header class="hero-section">
+<section class="hero">
+        <div class="logo-group">
+            <div class="ima-logo">IMA</div>
+            <span class="club-tag">Club</span>
+            <div class="logo-underline"></div>
+        </div>
+        <h1 class="hero-title">
+        UNLEASH YOUR <br>
+            <span class="gold-text">INNER POWER</span>
+        </h1>
+        <button class="cta-button">
+            join the club
+        </button>
+        <div class="footer-motto">
+            IRON • MIND • ATHLETICS
+        </div>
+
+    </header>
+
+</body>
+    <div class = "hero-image" > 
+      <img src="player.png" alt="gym player">
+    </div>
+   </section>
+<nav class="navbar">
+ <ul>
 <li><a href="index.html">Home</a> </li>
 <li><a href="classes.html">Classes</a></li>
 <li><a href="membership.html">Membership</a></li>
@@ -16,46 +41,111 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
+</nav>
 </header>
 <main>
-   <section>
-      <h2>Train Hard. Stay Strong.</h2>
-      <p> your journey to a healthier life starts here.</p>
-      <a hraf="membership.html">Join now</a>
-   </section>
-    <section>  
+   
+    <section class="our">  
       <h2>Our Facilities</h2>
       <article>
       <h3>Cardio Area</h3>
-      <p>Modern cardio machines.</p>
+      <p>High-performance treadmills, stationary bikes, and rowing machines to improve endurance and burn calories</p>
       </article>
       <article>
-      <h3>Weights Area</h3>
-      <p>Fully equipped free weights zone.</p>
+      <h3>Fitness/Strength Area</h3>
+      <p>State-of-the-art machines, free weights, and functional training equipment for all levels</p>
       </article>
       <article>
-      <h3>Swimming </h3>
-      <p>Indoor heated pool.</p>
-      </article>
+      <h3>Box Fitness </h3>
+      <p>Dedicated space for CrossFit-style workouts, boxing training, and conditioning sessions</p>
+      </article> 
+       <article>
+      <h3>Pilates/Yoga</h3>
+      <p>Spacious studio for yoga, pilates and high-energy fitness classes.</p>
+      </article> 
+       <article>
+      <h3>Locker Rooms</h3>
+      <p>Clean, secure lockers and modern showers for your comfort</p>
+      </article> 
+       <article>
+      <h3>Professional Trainers</h3>
+      <p>Certified coaches ready to guide and support you every step of the way</p>
+      </article> 
     </section>
-    <section>
-      <h2>Membership Plans</h2>
-      <ul>
-        <li>Bronze - Monthly</li>
-        <li>Silver - Quarterly</li>
-        <li>Gold - Annual</li>
-      </ul>  
-    </section>
+    <section id="membership">
+            <h2>Membership Plans</h2>
+            <div class="plans-grid">
+                <article class="plan-card Bronze">
+                    <h3>Bronze</h3>   
+                    <p class="price-container">
+        <span class="label">Price:</span> 
+                    <span class="price">2500<small>DA/month</small></span>
+                    <ul>                
+
+                        <li>Gym Access (Off-peak)</li>
+                        <li>Standard locker Room</li>
+                        <li>1 Class per Week</li>
+                         <li>Free WIFI Access</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Choose Bronze</a>
+                </article>
+                <article class="plan-card Silver">
+                    <h3>Silver</h3>
+                    <p class="price-container">
+        <span class="label">Price:</span>
+                    <span class="price">4500<small>DA/month</small></span>
+                    <ul>
+                        <li>Gym Access (Anytime)</li>
+                        <li>Standard Group Classes</li>
+                        <li>Shower Facilities</li>
+                         <li>Personalized Workout Plan</li>
+                         <li>Free WIFI Access</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Choose Silver</a>
+                </article>
+
+                <article class="plan-card gold">
+                    <h3>Gold</h3>
+                    <p class="price-container">
+        <span class="label">Price:</span>
+                    <span class="price">6500<small>DA/month</small></span>
+                    <ul>
+                        <li>24/7 Unlimited Access</li>
+                        <li>All Group Classes</li>
+                        <li>Free Personal Training sessions</li>
+                         <li>Pool and Sauna Access</li>
+                         <li>Free WIFI Access</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Choose Gold</a>
+                </article>
+            </div>
+        </section>
 
 </main>
 <footer>
-   <p>Constantine</p>
-   <p>0550 00 00 00</p>
-   <P>8:00 - 22:00</P>
+    <div class="footer-container">
+    
+        <div class="footer-column">
+            <h3>Opening Hours</h3>
+            <p>Sunday - Thursday: <br> 06:00 AM - 11:00 PM</p>
+            <p>Friday - Saturday: <br> 08:00 AM - 08:00 PM</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>📍 El Khroub, Constantine, Algeria</p>
+            <p>📞 +213 555 12 34 56</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Ima Club. All rights reserved. Designed for the Algerian Fitness Community.</p>
+    </div>
 </footer>
-
 </body>
-
-
 </html>
+
+
+
+
 
