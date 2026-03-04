@@ -11,12 +11,7 @@
             --text-muted: #94a3b8;   
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-dark);
@@ -291,3 +286,4 @@ footer::after {
             .navbar ul { gap: 10px; }
 
         }
+
