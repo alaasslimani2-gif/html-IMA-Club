@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+    --primary-gold: #f59e0b;
+    --bg-dark: #0f172a;
+    --card-bg:@ rgba(30, 41, 59, 0.8);
+    --text-muted: #94a3b8;
+    --white: #ffffff;
+    --main-bg-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=80&w=1000');
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), 
+                var(--main-bg-image) center/cover fixed;
+    color: var(--white);
+    margin: 0;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba(17, 24, 39, 0.95);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.navbar a.active { color: var(--primary-gold); }
+
+
+.admin-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gold-text { color: var(--primary-gold); }
+
+
+.section-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--primary-gold);
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.table-responsive { overflow-x: auto; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: 2px solid rgba(255,255,255,0.05);
+}
+
+td {
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+
+.plan-badge {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.bronze-bg { background: #cd7f32; color: white; }
+.silver-bg { background: #c0c0c0; color: #111; }
+.gold-bg { background: var(--primary-gold); color: black; }
+
+
+.actions { display: flex; gap: 10px; }
+
+.btn-edit, .btn-delete {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.btn-edit { background: #334155; color: white; }
+.btn-edit:hover { background: #475569; }
+
+.btn-delete { background: #7f1d1d; color: #fecaca; }
+.btn-delete:hover { background: #991b1b; }
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.full-width { grid-column: 1 / span 3; }
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid #334155;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+}
+
+.btn-add {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-gold);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-add:hover { background: #fbbf24; transform: translateY(-2px); }
+
+
+.admin-footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-muted);
+}
+
+
+@media (max-width: 768px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .full-width { grid-column: 1; }
+}
