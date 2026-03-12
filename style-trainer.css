@@ -274,7 +274,7 @@ footer::after {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #0a0e14; /* نفس لون خلفية موقعك */
+    background: #0a0e14; 
     top: 80px;
     left: -100%;
     text-align: center;
@@ -298,3 +298,4 @@ footer::after {
   }
 
 }
+
