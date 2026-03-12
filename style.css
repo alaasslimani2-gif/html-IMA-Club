@@ -13,12 +13,6 @@
     --text-muted: #94a3b8;   
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-dark);
@@ -230,8 +224,11 @@ article:hover {
     min-width: 300px;
     border-left: 4px solid var(--primary-gold);
 }
-
-
+.link{
+    text-align:center;
+    margin-top:20px;
+    
+}
 footer {
     padding: 40px;
     text-align: center;
@@ -376,4 +373,5 @@ display: flex;
   #check:checked ~ ul {
     left: 0;
   }
+
 }
